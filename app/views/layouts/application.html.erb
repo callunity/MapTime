@@ -4,10 +4,10 @@
 
   <title>MapTime</title>
   <!-- Latest compiled and minified CSS -->
+  <%= javascript_include_tag "https://www.google.com/jsapi"%>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
-  <%= javascript_include_tag "https://www.google.com/jsapi"%>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag 'application'%>
   <%= javascript_include_tag "https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"%>
@@ -56,6 +56,5 @@
   </header>
 
   <%= yield %>
-
 </body>
 </html>
