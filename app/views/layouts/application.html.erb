@@ -10,8 +10,8 @@
   <%= javascript_include_tag "https://www.google.com/jsapi"%>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag 'application'%>
-
- <%= stylesheet_link_tag  "https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css"%>
+  <%= javascript_include_tag "https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"%>
+  <%= stylesheet_link_tag  "https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css"%>
   
 
 
@@ -56,6 +56,6 @@
   </header>
 
   <%= yield %>
-<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+
 </body>
 </html>
