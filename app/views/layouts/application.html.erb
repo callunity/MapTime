@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 
   <title>MapTime</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
   <!-- Latest compiled and minified CSS -->
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag 'application'%>
-  <%= csrf_meta_tags %>
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
- <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css">
-   <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
-
+  <%= javascript_include_tag "https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"%>
+  <%= javascript_include_tag "https://www.google.com/jsapi"%>
+  <%= stylesheet_link_tag  "https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css"%>
+  
 
 </head>
 
@@ -23,39 +22,39 @@
       <a href="" class="centered-navigation-menu-button">MENU</a>
       <ul class="centered-navigation-menu" style="
       padding-top: 10px;">
-        <li class="nav-link">
-         <%= link_to "About", about_path %>
-        </li>
-        <li class="nav-link">
-          <%= link_to "Contact Us", contact_path %>
-        </li>
-        <li class="nav-link logo">
-          <%= link_to "Map Time", users_path, { 'data-no-turbolink' => true } %> 
-        </li>
-        <li class="nav-link">
-          <%if current_user %>
-            <%= link_to "Profile", user_path(current_user.id)%>
-          <%else%>
-            <%= link_to "Login", :login %>
-          <%end%>
-        </li>
-        <li class="nav-link">
-          <%if current_user %>
-            <%= link_to "Logout", :logout, method: :post %>
-          <%else%>
-            <%= link_to "Sign Up", new_user_path %>
-          <%end%>
-        </li>
-      </ul>
-    </div>
+      <li class="nav-link">
+       <%= link_to "About", about_path %>
+     </li>
+     <li class="nav-link">
+      <%= link_to "Contact Us", contact_path %>
+    </li>
+    <li class="nav-link logo">
+      <%= link_to "Map Time", users_path, { 'data-no-turbolink' => true } %> 
+    </li>
+    <li class="nav-link">
+      <%if current_user %>
+      <%= link_to "Profile", user_path(current_user.id)%>
+      <%else%>
+      <%= link_to "Login", :login %>
+      <%end%>
+    </li>
+    <li class="nav-link">
+      <%if current_user %>
+      <%= link_to "Logout", :logout, method: :post %>
+      <%else%>
+      <%= link_to "Sign Up", new_user_path %>
+      <%end%>
+    </li>
+  </ul>
+</div>
 
-    <div>
-      <p id="notice"><%= flash[:notice] %></p>
-      <p id="alert"><%= flash[:alert] %></p>
-    </div>
-  </header>
+<div>
+  <p id="notice"><%= flash[:notice] %></p>
+  <p id="alert"><%= flash[:alert] %></p>
+</div>
+</header>
 
-  <%= yield %>
+<%= yield %>
 
 </body>
 </html>
