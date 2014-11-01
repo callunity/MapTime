@@ -1,5 +1,5 @@
 $(document).on('ready page:load', function() {
-  $('.submenu').hide();
+  // $('.submenu').hide();
 
   $('.maps-trigger').bind('click', function(e) {
     $('.graphPage').hide();
