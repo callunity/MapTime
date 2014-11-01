@@ -1,10 +1,10 @@
 $(document).on('ready page:load', function() {
-  // $('.submenu').hide();
+  $('.submenu').hide();
 
   $('.maps-trigger').bind('click', function(e) {
     $('.graphPage').hide();
-
-    $('.maps-submenu').slideToggle('fast');
+    $('#chart-box').hide();
+    $('.maps-submenu').show('fast');
     // apply the toggle to the ul
     $(this).parent().toggleClass('is-expanded');
     e.preventDefault();
@@ -12,6 +12,7 @@ $(document).on('ready page:load', function() {
 
   $('.graphs-trigger').bind('click', function(e) {
     $('.graphPage').show();
+    $('#chart-box').show();
     $('.submenu').hide()
     $('.map').css("height", '0px');
     $('#map_edu').css("height", '0px');
