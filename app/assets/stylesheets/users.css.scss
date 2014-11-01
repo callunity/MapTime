@@ -225,7 +225,7 @@ h1 {
 }
 #logo {
   h2 {
-    font-family: 'hipsterscriptpro';
+    font-family: 'bebas';
     color: #81bfdc;
     font-size: 50px;
     padding-top: 15px;
@@ -249,7 +249,7 @@ h1 {
   $hero-color: white;
   $gradient-angle: 10deg;
   $hero-image: 'https: //raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
-  @include background(url("/assets/toronto2.png"));
+  @include background(url("toronto2.png"));
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
@@ -275,7 +275,7 @@ h1 {
       h1 {
         font-size: 150px;
         margin-bottom: 0.5em;
-        font-family: 'hipsterscriptpro';
+        font-family: 'bebas';
         color: #133d71;
         margin-bottom: 0;
         padding-left: 115px;
@@ -286,7 +286,7 @@ h1 {
       h2 {
         font-size: 40px;
         margin-bottom: 0.5em;
-        font-family: 'hipsterscriptpro';
+        font-family: 'bebas';
         color: #133d71;
         margin-bottom: 0;
       }
@@ -486,7 +486,7 @@ body {
     float: left;
     max-height: $centered-navigation-height;
     padding-left: $centered-navigation-padding;
-    font-family: hipsterscriptpro;
+    font-family: bebas;
     font-size: 25px;
     @include media($horizontal-bar-mode) {
       display: none;
@@ -677,14 +677,14 @@ body {
 .title {
   padding-right: 30px;
   padding-left: 30px;
-  font-family: 'hipsterscriptpro';
+  font-family: 'bebas';
   font-size: 40px;
 }
 .title1 {
   padding-top: 30px;
   padding-right: 30px;
   padding-left: 30px;
-  font-family: 'hipsterscriptpro';
+  font-family: 'bebas';
   font-size: 25px;
 }
 label {
@@ -717,7 +717,7 @@ label {
 .backgroundimage {
   /* margin: 0px auto; */
   
-  background-image: url(/assets/mapbackground.png);
+  background-image: url(mapbackground.png);
   background-repeat: no-repeat;
   /* background-position: 43% 20%; */
   
@@ -731,7 +731,7 @@ label {
 .backgroundimage1 {
   /* margin: 0px auto; */
   
-  background-image: url(/assets/red.png);
+  background-image: url(red.png);
   background-repeat: no-repeat;
   /* background-position: 43% 20%; */
   
@@ -745,7 +745,7 @@ label {
 .backgroundimage2 {
   /* margin: 0px auto; */
   
-  background-image: url(/assets/comic.png);
+  background-image: url(comic.png);
   background-repeat: no-repeat;
   /* background-position: 43% 20%; */
   
@@ -759,7 +759,7 @@ label {
 .backgroundimage3 {
   /* margin: 0px auto; */
   
-  background-image: url(/assets/pirate.png);
+  background-image: url(pirate.png);
   background-repeat: no-repeat;
   /* background-position: 43% 20%; */
   
@@ -780,7 +780,7 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
     @include row(table);
   }
   .images-wrapper1 {
-    @include background(url('/assets/red.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    @include background(url('red.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     border-bottom: $side-image-border;
     background-size: cover;
@@ -795,7 +795,7 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
     }
   }
   .images-wrapper2 {
-    @include background(url('/assets/comic.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    @include background(url('comic.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     border-bottom: $side-image-border;
     background-size: cover;
@@ -810,7 +810,7 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
     }
   }
   .images-wrapper3 {
-    @include background(url('/assets/pirate.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    @include background(url('pirate.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     border-bottom: $side-image-border;
     background-size: cover;
@@ -825,7 +825,7 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
     }
   }
   .images-wrapper4 {
-    @include background(url('/assets/mapbackground.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    @include background(url('mapbackground.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     border-bottom: $side-image-border;
     background-size: cover;
