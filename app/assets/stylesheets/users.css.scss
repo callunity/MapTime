@@ -425,6 +425,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e2e6e7;
+  height: 1300px;
 }
 .info {
   padding: 6px 8px;
@@ -774,6 +775,7 @@ $side-image-background-bottom: #5DAC5D;
 $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, .8), 30);
 .side-image {
   background: #F9F9F9;
+  height: 1500px;
   @include media($large-screen) {
     @include row(table);
   }
