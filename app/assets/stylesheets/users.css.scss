@@ -1,12 +1,16 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.map {
+  margin-top: 50px;
+}
 .submenu {
   display: block;
   background-color: #477dca;
   height: 50px;
-  width: 100%;
   margin-top: 10px;
+  width: 105%;
+  margin-left: -10px;
 }
 .graphPage {
   margin-left: 15%;
@@ -27,6 +31,8 @@ h1 {
 }
 .header {
   background-color: white;
+  margin-left: 0px;
+  margin-right: 0px;
   height: 57px;
   text-align: center;
   font-family: 'Bebas';
@@ -717,7 +723,7 @@ label {
 .backgroundimage {
   /* margin: 0px auto; */
   
-  background-image: url(mapbackground.png);
+  background-image: url('mapbackground.png');
   background-repeat: no-repeat;
   /* background-position: 43% 20%; */
   
@@ -731,7 +737,7 @@ label {
 .backgroundimage1 {
   /* margin: 0px auto; */
   
-  background-image: url(red.png);
+  background-image: url('red.png');
   background-repeat: no-repeat;
   /* background-position: 43% 20%; */
   
@@ -745,7 +751,7 @@ label {
 .backgroundimage2 {
   /* margin: 0px auto; */
   
-  background-image: url(comic.png);
+  background-image: url('comic.png');
   background-repeat: no-repeat;
   /* background-position: 43% 20%; */
   
@@ -759,7 +765,7 @@ label {
 .backgroundimage3 {
   /* margin: 0px auto; */
   
-  background-image: url(pirate.png);
+  background-image: url('pirate.png');
   background-repeat: no-repeat;
   /* background-position: 43% 20%; */
   
