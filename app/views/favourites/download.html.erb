@@ -1,0 +1,14 @@
+<div class="about-background">
+	<%=image_tag('mapbackground.png')%>
+
+	<div class='content-wrapper'>
+		<div class="content">
+			<div class='title'>Download the Data</div>
+			<br>
+			<div>
+				<%= button_to "Download map data (.csv)", "/data_files/torontoCT2011.csv" %><br>
+				<%= button_to "Download map data (.geojson)", "/data_files/torontoCT2011.geojson" %>
+			</div>
+		</div>
+	</div>
+</div>

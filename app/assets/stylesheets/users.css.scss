@@ -1,10 +1,54 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.about-background {
+  img {
+    height: 100%;
+  }
+  opacity: 0.5;
+  z-index: 0;
+  position: relative;
+  height: 83%;
+  .content-wrapper {
+    background-color: white;
+    z-index: 80;
+    opacity: 0.8;
+    border-bottom-width: 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    .content {
+      opacity: 1;
+      z-index: 100;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: 90%;
+      p {
+        margin-top: 20px;
+      }
+      li {
+        list-style: none;
+      }
+      .title {
+        font-family: bebas;
+        font-size: 40px;
+        text-align: left;
+      }
+    }
+  }
+}
+.maps-menu .active {
+  color: white;
+}
 .cartodb-header .content .title {
   padding-left: 20px;
 }
-.map {
+.map-wrapper {
   margin-top: 50px;
 }
 .submenu {
@@ -51,10 +95,11 @@ h1 {
     &:focus {
       outline: none;
     }
-    &.is-active {
-      border-bottom: 0;
-      border-bottom-color: yellow;
-      margin-bottom: -1px;
+    &:active {
+      border-bottom-color: white;
+    }
+    .active {
+      color: white;
     }
   }
 }
@@ -433,7 +478,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e2e6e7;
-  height: 1300px;
 }
 .info {
   padding: 6px 8px;
@@ -682,19 +726,6 @@ body {
     }
   }
 }
-.title {
-  padding-right: 30px;
-  padding-left: 30px;
-  font-family: 'bebas';
-  font-size: 40px;
-}
-.title1 {
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
-  font-family: 'bebas';
-  font-size: 25px;
-}
 label {
   padding-bottom: 10px;
   padding-top: 10px;
@@ -803,23 +834,16 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
     }
   }
   .images-wrapper2 {
-    @include background(url('comic.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
-    background-color: $side-image-background-top;
     border-bottom: $side-image-border;
-    background-size: cover;
     display: block;
     min-height: 12em;
     padding: 3em;
     @include media($large-screen) {
       @include span-columns(4);
-      background-position: bottom;
-      background-size: cover;
       border-right: $side-image-border;
     }
   }
   .images-wrapper3 {
-    @include background(url('pirate.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
-    background-color: $side-image-background-top;
     border-bottom: $side-image-border;
     background-size: cover;
     display: block;

@@ -3,6 +3,7 @@ $(document).on('ready page:load', function() {
 })
 
 function edu() {
+  $(this).addClass('active');
   $('.map').css("height", '0px');
   $('#map_edu').css("height", '830px');
   cartodb.createVis('map_edu', 'https://emmack.cartodb.com/api/v2/viz/8ef590ee-5eda-11e4-a9c3-0e018d66dc29/viz.json', {

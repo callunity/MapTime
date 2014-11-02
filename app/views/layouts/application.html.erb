@@ -33,18 +33,7 @@
           <%= link_to "Map Time", users_path, { 'data-no-turbolink' => true } %> 
         </li>
         <li class="nav-link">
-          <%if current_user %>
-            <%= link_to "Profile", user_path(current_user.id)%>
-          <%else%>
-            <%= link_to "Login", :login %>
-          <%end%>
-        </li>
-        <li class="nav-link">
-          <%if current_user %>
-            <%= link_to "Logout", :logout, method: :post %>
-          <%else%>
-            <%= link_to "Sign Up", new_user_path %>
-          <%end%>
+           <%= link_to "Data", downloadpage_path %>
         </li>
       </ul>
     </div>

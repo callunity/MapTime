@@ -1,5 +1,5 @@
 class FavouritesController < ApplicationController
-  before_filter :require_login
+
   skip_before_action :verify_authenticity_token, only: :download
 
   def index
@@ -40,7 +40,7 @@ class FavouritesController < ApplicationController
   end
 
   def download 
-    @favourite = Favourite.find(params[:favourite])
+    # @favourite = Favourite.find(params[:favourite])
     @favourite.data_set = DataSet.find(params[:data_set])
     send_file "#{Rails.root}/public#{@favourite.data_set.file}"
     @favourite.downloaded = true

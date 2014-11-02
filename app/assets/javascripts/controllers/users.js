@@ -22,4 +22,15 @@ $(document).on('ready page:load', function() {
     $('#map_pop').css("height", '0px');
     e.preventDefault();
   });
+
+
+  $('.maps-menu a').click(function() {
+
+    $('.maps-menu .active').removeClass('active'); // remove the class from the currently selected
+    $(this).addClass('active'); // add the class to the newly clicked link
+
+  });
+
+
+
 });
