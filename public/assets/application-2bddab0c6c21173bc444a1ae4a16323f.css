@@ -37,11 +37,11 @@ input[type="submit"]:disabled {
 }
 
 @font-face {
-  font-family: hipsterscriptpro;
+  font-family: bebas;
   font-weight: normal;
   font-style: normal;
-  src: url(/assets/hipsterscriptpro-webfont.eot);
-  src: url(/assets/hipsterscriptpro-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/hipsterscriptpro-webfont.woff) format("woff"), url(/assets/hipsterscriptpro-webfont.ttf) format("truetype"), url(/fonts/hipsterscriptpro-webfont.svg#hipsterscriptpro) format("svg");
+  src: url(/assets/bebas-webfont.eot);
+  src: url(/assets/bebas-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/bebas-webfont.woff) format("woff"), url(/assets/bebas-webfont.ttf) format("truetype"), url(/fonts/bebas-webfont.svg#bebas) format("svg");
 }
 
 /* line 3, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
@@ -62,7 +62,7 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-family: '/fonts/hipsterscriptpro';
+  font-family: '/fonts/bebas';
   line-height: 1.25;
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -446,7 +446,7 @@ h1 {
 .accordion li > a {
   padding: 0.75em 1.618em;
   display: block;
-  font-family: 'hipsterscriptpro';
+  font-family: 'bebas';
   color: #133d71;
   text-align: center;
   font-size: 27px;
