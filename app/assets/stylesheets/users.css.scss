@@ -1,918 +1,913 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-@font-face{ 
-  font-family: 'bebas1';
-  src: font-url('bebas-webfont.eot');
-  src: font-url('bebas-webfont.eot?iefix') format('eot'),
-       font-url('bebas-webfont.woff') format('woff'),
-       font-url('bebas-webfont.ttf') format('truetype'),
-       font-url('bebas-webfont.svg#webfont') format('svg');
+@font-face {
+    font-family: 'bebas1';
+    src: font-url('bebas-webfont.eot');
+    src: font-url('bebas-webfont.eot?iefix') format('eot'), font-url('bebas-webfont.woff') format('woff'), font-url('bebas-webfont.ttf') format('truetype'), font-url('bebas-webfont.svg#webfont') format('svg');
 }
-
-.download-links{
-  font-size:20px;
+.download-links {
+    font-size: 20px;
 }
-
-
 .about-background {
-  img {
-    height: 100%;
-  }
-  opacity: 0.5;
-  z-index: 0;
-  position: relative;
-  height: 83%;
-  .content-wrapper {
-    background-color: white;
-    z-index: 80;
-    opacity: 0.8;
-    border-bottom-width: 50px;
-    padding-bottom: 50px;
-    padding-top: 30px;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    .content {
-      opacity: 1;
-      z-index: 100;
-      position: relative;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      height: 90%;
-      p {
-        margin-top: 20px;
-      }
-      li {
-        list-style: none;
-      }
-      .title {
-        font-family: bebas1;
-        font-size: 40px;
-        text-align: left;
-      }
+    img {
+        height: 100%;
     }
-  }
+    opacity: 0.5;
+    z-index: 0;
+    position: relative;
+    height: 83%;
+    .content-wrapper {
+        background-color: white;
+        z-index: 80;
+        opacity: 0.8;
+        border-bottom-width: 50px;
+        padding-bottom: 50px;
+        padding-top: 30px;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        .content {
+            opacity: 1;
+            z-index: 100;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 90%;
+            p {
+                margin-top: 20px;
+            }
+            li {
+                list-style: none;
+            }
+            .title {
+                font-family: bebas1;
+                font-size: 40px;
+                text-align: left;
+            }
+        }
+    }
 }
 .maps-menu .active {
-  color: white;
+    color: white;
 }
 .cartodb-header .content .title {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 .map-wrapper {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 .submenu {
-  display: block;
-  background-color: #477dca;
-  height: 50px;
-  margin-top: 10px;
-  width: 105%;
-  margin-left: -10px;
+    display: block;
+    background-color: #477dca;
+    height: 50px;
+    margin-top: 10px;
+    width: 105%;
+    margin-left: -10px;
 }
 .graphPage {
-  margin-left: 15%;
+    margin-left: 15%;
 }
 h1 {
-  font-family: 'bebas1';
-  color: #477dca;
+    font-family: 'bebas1';
+    color: #477dca;
 }
 .label {
-  font-family: 'bebas1';
-  font-size: 25px;
+    font-family: 'bebas1';
+    font-size: 25px;
 }
 #chart-box {
-  width: 800px;
-  height: 700px;
-  margin-top: 20px;
-  margin-left: 15%;
+    width: 800px;
+    height: 700px;
+    margin-top: 20px;
+    margin-left: 15%;
 }
 .heading {
-  background-color: white;
-  margin-left: 0px;
-  margin-right: 0px;
-  height: 57px;
-  font-family: 'bebas1';
-  font-size: 25px;
-  padding: 10px;
-  a.categories {
-    padding: 7px 20px 0 29px;
-    float: left;
-    color: black;
-    &:hover {
-      color: white;
+    background-color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 57px;
+    font-family: 'bebas1';
+    font-size: 25px;
+    padding: 10px;
+    a.categories {
+        padding: 7px 20px 0 29px;
+        float: left;
+        color: black;
+        &:hover {
+            color: white;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            border-bottom-color: white;
+        }
+        .active {
+            color: white;
+        }
     }
-    &:focus {
-      outline: none;
-    }
-    &:active {
-      border-bottom-color: white;
-    }
-    .active {
-      color: white;
-    }
-  }
 }
 #loader {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 1);
-  transition: background 1s ease-out;
-  -webkit-transition: background 1s ease-out;
-}
-#loader.done {
-  background: rgba(255, 255, 255, 0);
-}
-#loader.hide {
-  display: none;
-}
-#loader .message {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
-.function-menu {
-  display: inline;
-}
-.js-accordion-trigger {
-  margin-left: 20px;
-}
-.accordion {
-  $accordion-menu-border-color: $base-border-color;
-  $accordion-menu-color: $base-font-color;
-  $accordion-menu-border: 1px solid $accordion-menu-border-color;
-  $accordion-menu-background: lighten($accordion-menu-border-color, 10);
-  $accordion-menu-hover: lighten($accordion-menu-background, 2);
-  $accordion-menu-sub-background: darken($accordion-menu-background, 5);
-  $accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6);
-  $accordion-menu-sub-hover: lighten($accordion-menu-sub-background, 2);
-  $accordion-menu-list-padding: $base-spacing/2 $gutter;
-  background-color: $accordion-menu-background;
-  border: $accordion-menu-border;
-  li {
-    border-bottom: $accordion-menu-border;
-    line-height: 1.1em;
-    > a {
-      // color: $accordion-menu-color;
-      padding: $accordion-menu-list-padding;
-      display: block;
-      font-family: 'bebas1';
-      color: #133d71;
-      text-align: center;
-      font-size: 27px;
-    }
-    &:last-child {
-      border: none;
-    }
-    &:hover {
-      background-color: $accordion-menu-hover;
-    }
-  }
-  ul.submenu {
-    display: none;
-    li {
-      background-color: $accordion-menu-sub-background;
-      &:first-child {
-        border-top: $accordion-menu-border;
-        box-shadow: inset 0 1px 1px $accordion-menu-sub-inset;
-      }
-      &:hover {
-        background-color: $accordion-menu-sub-hover;
-      }
-    }
-  }
-  .is-expanded {
-    display: block;
-    padding-bottom: 5px;
-  }
-}
-@mixin grid-item-columns($columns) {
-  width: (100% / 12) * $columns;
-}
-.grid-items-lines {
-  // $grid-items-background: $base-background-color;
-  // $grid-item-background: $base-background-color;
-  // $grid-item-border: 1px solid transparentize($base-font-color, .8);
-  $grid-item-columns: 3;
-  $grid-item-big-columns: 9;
-  $grid-item-color: $base-font-color;
-  $grid-item-height: 14em;
-  @include clearfix;
-  position: relative;
-  .grid-item {
-    @include transition (all 0.2s ease-in-out);
-    height: $grid-item-height;
-    // background: $grid-item-background;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    float: right;
-    // padding: 2em;
-    // border-right: $grid-item-border;
-    // border-bottom: $grid-item-border;
-    cursor: pointer;
-    border-right-width: 10px;
-    border-left-width: 10px;
-    @include media($large-screen) {
-      @include grid-item-columns($grid-item-columns);
-    }
-    &:hover {
-      background: transparentize($grid-item-color, .95);
-    }
-  }
-  .grid-item img {
-    display: block;
-    height: 300px;
-    height: 300px;
-    margin-bottom: 1.2em;
-  }
-  .grid-item h1 {
-    color: black;
-    font-size: 1.3em;
-    margin-bottom: 0.4em;
-  }
-  .grid-item p {
-    color: transparentize($grid-item-color, .4);
-    @include media($medium-screen) {
-      max-width: 70%;
-    }
-  }
-  .grid-item-big {
-    @include media($large-screen) {
-      @include grid-item-columns($grid-item-big-columns);
-    }
-    p {
-      @include media($medium-screen) {
-        max-width: 60%;
-      }
-    }
-  }
-  // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
-  .bottom-cover {
     position: absolute;
+    top: 0;
     bottom: 0;
     width: 100%;
-    height: 3px;
-    // background: $grid-items-background;
-  }
-  .right-cover {
+    background: rgba(255, 255, 255, 1);
+    transition: background 1s ease-out;
+    -webkit-transition: background 1s ease-out;
+}
+#loader.done {
+    background: rgba(255, 255, 255, 0);
+}
+#loader.hide {
+    display: none;
+}
+#loader .message {
     position: absolute;
-    right: 0;
-    height: 100%;
-    width: 4px;
-    // background: $grid-items-background;
-  }
+    left: 50%;
+    top: 50%;
+}
+.function-menu {
+    display: inline;
+}
+.js-accordion-trigger {
+    margin-left: 20px;
+}
+.accordion {
+    $accordion-menu-border-color: $base-border-color;
+    $accordion-menu-color: $base-font-color;
+    $accordion-menu-border: 1px solid $accordion-menu-border-color;
+    $accordion-menu-background: lighten($accordion-menu-border-color, 10);
+    $accordion-menu-hover: lighten($accordion-menu-background, 2);
+    $accordion-menu-sub-background: darken($accordion-menu-background, 5);
+    $accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6);
+    $accordion-menu-sub-hover: lighten($accordion-menu-sub-background, 2);
+    $accordion-menu-list-padding: $base-spacing/2 $gutter;
+    background-color: $accordion-menu-background;
+    border: $accordion-menu-border;
+    li {
+        border-bottom: $accordion-menu-border;
+        line-height: 1.1em;
+        > a {
+            // color: $accordion-menu-color;
+            padding: $accordion-menu-list-padding;
+            display: block;
+            font-family: 'bebas1';
+            color: #133d71;
+            text-align: center;
+            font-size: 27px;
+        }
+        &:last-child {
+            border: none;
+        }
+        &:hover {
+            background-color: $accordion-menu-hover;
+        }
+    }
+    ul.submenu {
+        display: none;
+        li {
+            background-color: $accordion-menu-sub-background;
+            &:first-child {
+                border-top: $accordion-menu-border;
+                box-shadow: inset 0 1px 1px $accordion-menu-sub-inset;
+            }
+            &:hover {
+                background-color: $accordion-menu-sub-hover;
+            }
+        }
+    }
+    .is-expanded {
+        display: block;
+        padding-bottom: 5px;
+    }
+}
+@mixin grid-item-columns($columns) {
+    width: (100% / 12) * $columns;
+}
+.grid-items-lines {
+    // $grid-items-background: $base-background-color;
+    // $grid-item-background: $base-background-color;
+    // $grid-item-border: 1px solid transparentize($base-font-color, .8);
+    $grid-item-columns: 3;
+    $grid-item-big-columns: 9;
+    $grid-item-color: $base-font-color;
+    $grid-item-height: 14em;
+    @include clearfix;
+    position: relative;
+    .grid-item {
+        @include transition (all 0.2s ease-in-out);
+        height: $grid-item-height;
+        // background: $grid-item-background;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        float: right;
+        // padding: 2em;
+        // border-right: $grid-item-border;
+        // border-bottom: $grid-item-border;
+        cursor: pointer;
+        border-right-width: 10px;
+        border-left-width: 10px;
+        @include media($large-screen) {
+            @include grid-item-columns($grid-item-columns);
+        }
+        &:hover {
+            background: transparentize($grid-item-color, .95);
+        }
+    }
+    .grid-item img {
+        display: block;
+        height: 300px;
+        height: 300px;
+        margin-bottom: 1.2em;
+    }
+    .grid-item h1 {
+        color: black;
+        font-size: 1.3em;
+        margin-bottom: 0.4em;
+    }
+    .grid-item p {
+        color: transparentize($grid-item-color, .4);
+        @include media($medium-screen) {
+            max-width: 70%;
+        }
+    }
+    .grid-item-big {
+        @include media($large-screen) {
+            @include grid-item-columns($grid-item-big-columns);
+        }
+        p {
+            @include media($medium-screen) {
+                max-width: 60%;
+            }
+        }
+    }
+    // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+    .bottom-cover {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        // background: $grid-items-background;
+    }
+    .right-cover {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 4px;
+        // background: $grid-items-background;
+    }
 }
 .wrapper {
-  @include outer-container;
-  .primary {
-    @include span-columns(3);
-  }
-  .secondary {
-    @include span-columns(6);
-  }
-  .third {
-    @include span-columns(3);
-  }
+    @include outer-container;
+    .primary {
+        @include span-columns(3);
+    }
+    .secondary {
+        @include span-columns(6);
+    }
+    .third {
+        @include span-columns(3);
+    }
 }
 .loader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url("images/page-loader.gif") 50% 50% no-repeat rgb(249, 249, 249);
-}
-#logo {
-  h2 {
-    font-family: 'bebas1';
-    color: #81bfdc;
-    font-size: 50px;
-    padding-top: 15px;
-    padding-left: 15px;
-    text-align: left;
-  }
-}
-#nav {
-  p {
-    font-family: 'Arial';
-    padding-top: 15px;
-    padding-left: 15px;
-    text-align: right;
-    padding-right: 10px;
-    font-size: 15px;
-  }
-}
-.hero {
-  $hero-background-top: darken($base-accent-color, 25);
-  $hero-background-bottom: adjust-hue($hero-background-top, -70);
-  $hero-color: white;
-  $gradient-angle: 10deg;
-  $hero-image: 'https: //raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
-  @include background(url("toronto2.png"));
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100%;
-  padding-bottom: 4em;
-  padding-top: 7em;
-  height: 876px;
-  .hero-logo img {
-    height: 3em;
-    margin-bottom: 2.5em;
-  }
-  .hero-inner {
-    @include outer-container;
-    @include clearfix;
-    padding: 3em;
-    margin: auto;
-    text-align: center;
-    // color: $hero-color;
-    button {
-      background-color: white;
-    }
-    .hero-copy {
-      text-align: center;
-      h1 {
-        font-size: 150px;
-        margin-bottom: 0.5em;
-        font-family: 'bebas1';
-        color: #133d71;
-        margin-bottom: 0;
-        padding-left: 115px;
-        @include media($large-screen) {
-          // font-size: 1.8em;
-        }
-      }
-      h2 {
-        font-size: 40px;
-        margin-bottom: 0.5em;
-        font-family: 'bebas1';
-        color: #133d71;
-        margin-bottom: 0;
-      }
-      p {
-        font-family: 'Arial
-        ';
-        margin: auto auto 3em;
-        font-weight: 300;
-        line-height: 1.4em;
-        color: #5e9ca0;
-        @include media($large-screen) {
-          font-size: 1em;
-          max-width: 100%;
-        }
-      }
-    }
-  }
-}
-.ui-button {
-  position: absolute;
-  z-index: 100;
-  right: 936px;
-  top: 61px;
-  background: none;
-  color: pink;
-  &:hover {
-    background: none;
-  }
-}
-#map {
-  width: 100%;
-  height: 800px;
-}
-#snapshot {
-  width: 100%;
-}
-.home {
-  font-family: 'Aria';
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  // margin: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  p {
-    font-size: 15px;
-  }
-}
-.label-switch {
-  $switch-width: 35px;
-  $switch-padding: 2px;
-  $switch-height: 20px;
-  $switch-radius: $switch-height;
-  $knob-height: $switch-height - ($switch-padding * 2);
-  $knob-width: $knob-height;
-  $knob-radius: $switch-height - ($switch-padding * 2);
-  padding-top: 6px;
-  align-self: center;
-  border-radius: $switch-radius;
-  cursor: pointer;
-  display: inline-flex;
-  height: 30px;
-  position: relative;
-  vertical-align: middle;
-  padding-left: 10px;
-  width: 450px;
-  @include box-sizing(border-box);
-  font-family: Arial;
-  color: #0e7347;
-  input[type="checkbox"] {
-    display: none;
-    + .checkbox {
-      background: #e5e5e5;
-      border: none;
-      border-radius: $switch-radius;
-      cursor: pointer;
-      height: $switch-height;
-      margin-right: 10px;
-      padding: 0;
-      position: relative;
-      width: $switch-width;
-      z-index: 0;
-      @include box-sizing(border-box);
-      @include transition(all 0.3s ease);
-      &:before {
-        background: white;
-        border-radius: $switch-radius;
-        content: ' ';
-        height: $knob-radius;
-        width: $switch-width - ($switch-padding * 2);
-        z-index: 1;
-        @include box-sizing(border-box);
-        @include position(absolute, 2px 0 0 2px);
-        @include transition(all 0.3s ease);
-        @include transform(scale(1));
-      }
-      &:after {
-        background: white;
-        border-radius: $knob-radius;
-        content: ' ';
-        height: $knob-height;
-        width: $knob-width;
-        z-index: 2;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-        @include position(absolute, 2px 0 0 2px);
-        @include transition(all 0.3s ease);
-      }
-    }
-    &:checked {
-      +.checkbox {
-        background: $blue;
-        &:before {
-          @include transform(scale(0));
-        }
-        &:after {
-          left: $switch-width - $knob-width - ($switch-padding);
-        }
-      }
-    }
-  }
-}
-.cnvs {
-  width: 0px;
-  height: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  &:photo {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("images/page-loader.gif") 50% 50% no-repeat rgb(249, 249, 249);
+}
+#logo {
+    h2 {
+        font-family: 'bebas1';
+        color: #81bfdc;
+        font-size: 50px;
+        padding-top: 15px;
+        padding-left: 15px;
+        text-align: left;
+    }
+}
+#nav {
+    p {
+        font-family: 'Arial';
+        padding-top: 15px;
+        padding-left: 15px;
+        text-align: right;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+}
+.hero {
+    $hero-background-top: darken($base-accent-color, 25);
+    $hero-background-bottom: adjust-hue($hero-background-top, -70);
+    $hero-color: white;
+    $gradient-angle: 10deg;
+    $hero-image: 'https: //raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+    @include background(url("toronto2.png"));
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    padding-bottom: 4em;
+    padding-top: 7em;
+    height: 876px;
+    .hero-logo img {
+        height: 3em;
+        margin-bottom: 2.5em;
+    }
+    .hero-inner {
+        @include outer-container;
+        @include clearfix;
+        padding: 3em;
+        margin: auto;
+        text-align: center;
+        // color: $hero-color;
+        button {
+            background-color: white;
+        }
+        .hero-copy {
+            text-align: center;
+            h1 {
+                font-size: 150px;
+                margin-bottom: 0.5em;
+                font-family: 'bebas1';
+                color: #133d71;
+                margin-bottom: 0;
+                padding-left: 115px;
+                @include media($large-screen) {
+                    // font-size: 1.8em;
+                }
+            }
+            h2 {
+                font-size: 40px;
+                margin-bottom: 0.5em;
+                font-family: 'bebas1';
+                color: #133d71;
+                margin-bottom: 0;
+            }
+            p {
+                font-family: 'Arial
+';
+ margin: auto auto 3em;
+                font-weight: 300;
+                line-height: 1.4em;
+                color: #5e9ca0;
+                @include media($large-screen) {
+                    font-size: 1em;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+.ui-button {
+    position: absolute;
+    z-index: 100;
+    right: 936px;
+    top: 61px;
+    background: none;
+    color: pink;
+    &:hover {
+        background: none;
+    }
+}
+#map {
+    width: 100%;
     height: 800px;
-  }
+}
+#snapshot {
+    width: 100%;
+}
+.home {
+    font-family: 'Aria';
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    // margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    p {
+        font-size: 15px;
+    }
+}
+.label-switch {
+    $switch-width: 35px;
+    $switch-padding: 2px;
+    $switch-height: 20px;
+    $switch-radius: $switch-height;
+    $knob-height: $switch-height - ($switch-padding * 2);
+    $knob-width: $knob-height;
+    $knob-radius: $switch-height - ($switch-padding * 2);
+    padding-top: 6px;
+    align-self: center;
+    border-radius: $switch-radius;
+    cursor: pointer;
+    display: inline-flex;
+    height: 30px;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 10px;
+    width: 450px;
+    @include box-sizing(border-box);
+    font-family: Arial;
+    color: #0e7347;
+    input[type="checkbox"] {
+        display: none;
+        + .checkbox {
+            background: #e5e5e5;
+            border: none;
+            border-radius: $switch-radius;
+            cursor: pointer;
+            height: $switch-height;
+            margin-right: 10px;
+            padding: 0;
+            position: relative;
+            width: $switch-width;
+            z-index: 0;
+            @include box-sizing(border-box);
+            @include transition(all 0.3s ease);
+            &:before {
+                background: white;
+                border-radius: $switch-radius;
+                content: ' ';
+                height: $knob-radius;
+                width: $switch-width - ($switch-padding * 2);
+                z-index: 1;
+                @include box-sizing(border-box);
+                @include position(absolute, 2px 0 0 2px);
+                @include transition(all 0.3s ease);
+                @include transform(scale(1));
+            }
+            &:after {
+                background: white;
+                border-radius: $knob-radius;
+                content: ' ';
+                height: $knob-height;
+                width: $knob-width;
+                z-index: 2;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+                @include position(absolute, 2px 0 0 2px);
+                @include transition(all 0.3s ease);
+            }
+        }
+        &:checked {
+            +.checkbox {
+                background: $blue;
+                &:before {
+                    @include transform(scale(0));
+                }
+                &:after {
+                    left: $switch-width - $knob-width - ($switch-padding);
+                }
+            }
+        }
+    }
+}
+.cnvs {
+    width: 0px;
+    height: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    &:photo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 800px;
+    }
 }
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #e2e6e7;
+    margin: 0;
+    padding: 0;
+    background-color: #e2e6e7;
 }
 .info {
-  padding: 6px 8px;
-  font: 14px/16px Arial, Helvetica, sans-serif;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 .info h4 {
-  margin: 0 0 5px;
-  color: #777;
+    margin: 0 0 5px;
+    color: #777;
 }
 .tooltip {
-  opacity: 1;
+    opacity: 1;
 }
 .map-tooltip {
-  min-height: 80px;
-  min-width: 320px;
+    min-height: 80px;
+    min-width: 320px;
 }
 #canvas {
-  margin-left: 20px;
-  margin-right: 0;
-  margin-bottom: 20px;
-  border: thin solid #aaa;
-  cursor: crosshair;
-  padding: 0;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    border: thin solid #aaa;
+    cursor: crosshair;
+    padding: 0;
 }
 #controls {
-  margin: 20px 0 20px 20px;
+    margin: 20px 0 20px 20px;
 }
 #rubberbandDiv {
-  position: absolute;
-  border: 3px solid blue;
-  cursor: crosshair;
-  display: none;
+    position: absolute;
+    border: 3px solid blue;
+    cursor: crosshair;
+    display: none;
 }
-.before {} .after {} .centered-navigation {
-  $centered-navigation-padding: 1em;
-  $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: black;
-  $centered-navigation-color: transparentize($base-font-color, 0.3);
-  $centered-navigation-color-hover: $base-font-color;
-  $centered-navigation-height: 60px;
-  $centered-navigation-item-padding: 1em;
-  $centered-navigation-submenu-padding: 1em;
-  $centered-navigation-submenu-width: 12em;
-  $centered-navigation-item-nudge: 2.2em;
-  $horizontal-bar-mode: $large-screen;
-  background-color: $centered-navigation-background;
-  border-bottom: 1px solid darken($centered-navigation-background, 6);
-  font-family: Arial;
-  height: $centered-navigation-height;
-  width: 100%;
-  z-index: 9999;
-  // Mobile view
-  .mobile-logo {
-    display: inline;
-    float: left;
-    max-height: $centered-navigation-height;
-    // padding-left: $centered-navigation-padding;
-    font-family: bebas1;
-    font-size: 25px;
-    @include media($horizontal-bar-mode) {
-      display: none;
-    }
-  }
-  .centered-navigation-menu-button {
-    color: $centered-navigation-color;
-    display: block;
-    float: right;
-    font-weight: 700;
-    line-height: $centered-navigation-height;
-    margin: 0;
-    padding-right: $centered-navigation-submenu-padding;
-    text-transform: uppercase;
-    @include media ($horizontal-bar-mode) {
-      display: none;
-    }
-    &:hover {
-      color: $centered-navigation-color-hover;
-    }
-  }
-  // Nav menu
-  .centered-navigation-wrapper {
-    // @include outer-container;
-    @include clearfix;
-    position: relative;
-    z-index: 999;
-  }
-  ul.centered-navigation-menu {
-    -webkit-transform-style: preserve-3d; // stop webkit flicker
-    clear: both;
-    display: none;
-    margin: 0 auto;
-    overflow: visible;
-    padding: 0;
-    width: 100%;
-    z-index: 99999;
-    @include media ($horizontal-bar-mode) {
-      display: block;
-    }
-  }
-  // The nav items
-  .nav-link:first-child {
-    @include media($horizontal-bar-mode) {
-      margin-left: 28px;
-    }
-  }
-  ul li.nav-link {
-    background: $centered-navigation-background;
-    display: block;
-    line-height: $centered-navigation-height;
-    overflow: hidden;
-    padding-right: $centered-navigation-submenu-padding;
-    text-align: right;
-    width: 100%;
-    z-index: 9999;
-    padding-top: 8px;
-    @include media($horizontal-bar-mode) {
-      background: transparent;
-      display: inline;
-      line-height: $centered-navigation-height;
-      a {
-        padding-right: $centered-navigation-item-padding;
-      }
-    }
-    a {
-      color: white;
-      display: inline-block;
-      font-family: Arial;
-      &:hover {
-        color: #81bfdc;
-      }
-    }
-  }
-  li.logo.nav-link {
-    display: none;
-    line-height: 0;
-    font-size: 20px;
-    a {
-      font-family: bebas1;
-      margin-top: 18px;
-      font-size: 50px
-    }
-    @include media($large-screen) {
-      display: inline;
-    }
-  }
-  // .logo a {
-  //   margin-bottom: -$centered-navigation-logo-height / 3;
-  //   max-height: $centered-navigation-logo-height;
-  //   opacity: .6;
-  //   font-family: bebas1;
-  // }
-  // Sub menus
-  li.more.nav-link {
-    padding-right: 0;
-    @include media($large-screen) {
-      // padding-right: $centered-navigation-submenu-padding;
-    }
-    > ul > li:first-child a {
-      padding-top: 1em;
-    }
-    a {
-      // margin-right: $centered-navigation-submenu-padding;
-    }
-    > a {
-      padding-right: 0.6em;
-      padding-top: 0.5em;
-    }
-    > a:after {
-      @include position(absolute, auto -.4em auto auto);
-      color: $centered-navigation-color;
-      content: '\25BE';
-    }
-  }
-  li.more {
-    overflow: visible;
-    padding-right: 0;
-    a {
-      padding-right: $centered-navigation-submenu-padding;
-    }
-    > a {
-      padding-right: 1.6em;
-      position: relative;
-      @include media($large-screen) {
-        margin-right: $centered-navigation-submenu-padding;
-      }
-      &:after {
-        content: '›';
-        font-size: 1.2em;
-        position: absolute;
-        right: $centered-navigation-submenu-padding / 2;
-      }
-    }
-    &:hover > .submenu {
-      display: block;
-    }
-    @include media($horizontal-bar-mode) {
-      padding-right: $centered-navigation-submenu-padding;
-      position: relative;
-    }
-  }
-  ul.submenu {
-    display: none;
-    padding-left: 0;
-    @include media($horizontal-bar-mode) {
-      left: -$centered-navigation-submenu-padding;
-      position: absolute;
-      top: 1.5em;
-    }
-    .submenu {
-      @include media($horizontal-bar-mode) {
-        left: $centered-navigation-submenu-width - .2em;
-        top: 0;
-      }
-    }
-    li {
-      display: block;
-      padding-right: 0;
-      @include media($horizontal-bar-mode) {
-        line-height: $centered-navigation-height / 1.3;
-        &:first-child > a {
-          border-top-left-radius: $base-border-radius;
-          border-top-right-radius: $base-border-radius;
-        }
-        &:last-child > a {
-          border-bottom-left-radius: $base-border-radius;
-          border-bottom-right-radius: $base-border-radius;
-          padding-bottom: .7em;
-        }
-      }
-      a {
-        background-color: darken($centered-navigation-background, 3);
-        display: inline-block;
-        text-align: right;
+header {
+    .before {} .after {} .centered-navigation {
+        $centered-navigation-padding: 1em;
+        $centered-navigation-logo-height: 2em;
+        $centered-navigation-background: black;
+        $centered-navigation-color: transparentize($base-font-color, 0.3);
+        $centered-navigation-color-hover: $base-font-color;
+        $centered-navigation-height: 60px;
+        $centered-navigation-item-padding: 1em;
+        $centered-navigation-submenu-padding: 1em;
+        $centered-navigation-submenu-width: 12em;
+        $centered-navigation-item-nudge: 2.2em;
+        $horizontal-bar-mode: $large-screen;
+        background-color: $centered-navigation-background;
+        border-bottom: 1px solid darken($centered-navigation-background, 6);
+        font-family: Arial;
+        height: $centered-navigation-height;
         width: 100%;
-        @include media($horizontal-bar-mode) {
-          background-color: $centered-navigation-background;
-          padding-left: $centered-navigation-submenu-padding;
-          text-align: left;
-          width: $centered-navigation-submenu-width;
+        z-index: 9999;
+        // Mobile view
+        .mobile-logo {
+            display: inline;
+            float: left;
+            max-height: $centered-navigation-height;
+            // padding-left: $centered-navigation-padding;
+            font-family: bebas1;
+            font-size: 25px;
+            @include media($horizontal-bar-mode) {
+                display: none;
+            }
         }
-      }
+        .centered-navigation-menu-button {
+            color: $centered-navigation-color;
+            display: block;
+            float: right;
+            font-weight: 700;
+            line-height: $centered-navigation-height;
+            margin: 0;
+            padding-right: $centered-navigation-submenu-padding;
+            text-transform: uppercase;
+            @include media ($horizontal-bar-mode) {
+                display: none;
+            }
+            &:hover {
+                color: $centered-navigation-color-hover;
+            }
+        }
+        // Nav menu
+        .centered-navigation-wrapper {
+            // @include outer-container;
+            @include clearfix;
+            position: relative;
+            z-index: 999;
+        }
+        ul.centered-navigation-menu {
+            -webkit-transform-style: preserve-3d; // stop webkit flicker
+            clear: both;
+            display: none;
+            margin: 0 auto;
+            overflow: visible;
+            padding: 0;
+            width: 100%;
+            z-index: 99999;
+            @include media ($horizontal-bar-mode) {
+                display: block;
+            }
+        }
+        // The nav items
+        .nav-link:first-child {
+            @include media($horizontal-bar-mode) {
+                margin-left: 28px;
+            }
+        }
+        ul li.nav-link {
+            background: $centered-navigation-background;
+            display: block;
+            line-height: $centered-navigation-height;
+            overflow: hidden;
+            padding-right: $centered-navigation-submenu-padding;
+            text-align: right;
+            width: 100%;
+            z-index: 9999;
+            padding-top: 8px;
+            @include media($horizontal-bar-mode) {
+                background: transparent;
+                display: inline;
+                line-height: $centered-navigation-height;
+                a {
+                    padding-right: $centered-navigation-item-padding;
+                }
+            }
+            a {
+                color: white;
+                display: inline-block;
+                font-family: Arial;
+                &:hover {
+                    color: #81bfdc;
+                }
+            }
+        }
+        li.logo.nav-link {
+            display: none;
+            line-height: 0;
+            font-size: 20px;
+            a {
+                font-family: bebas1;
+                margin-top: 18px;
+                font-size: 50px
+            }
+            @include media($large-screen) {
+                display: inline;
+            }
+        }
+        // .logo a {
+        //   margin-bottom: -$centered-navigation-logo-height / 3;
+        //   max-height: $centered-navigation-logo-height;
+        //   opacity: .6;
+        //   font-family: bebas1;
+        // }
+        // Sub menus
+        li.more.nav-link {
+            padding-right: 0;
+            @include media($large-screen) {
+                // padding-right: $centered-navigation-submenu-padding;
+            }
+            > ul > li:first-child a {
+                padding-top: 1em;
+            }
+            a {
+                // margin-right: $centered-navigation-submenu-padding;
+            }
+            > a {
+                padding-right: 0.6em;
+                padding-top: 0.5em;
+            }
+            > a:after {
+                @include position(absolute, auto -.4em auto auto);
+                color: $centered-navigation-color;
+                content: '\25BE';
+            }
+        }
+        li.more {
+            overflow: visible;
+            padding-right: 0;
+            a {
+                padding-right: $centered-navigation-submenu-padding;
+            }
+            > a {
+                padding-right: 1.6em;
+                position: relative;
+                @include media($large-screen) {
+                    margin-right: $centered-navigation-submenu-padding;
+                }
+                &:after {
+                    content: '›';
+                    font-size: 1.2em;
+                    position: absolute;
+                    right: $centered-navigation-submenu-padding / 2;
+                }
+            }
+            &:hover > .submenu {
+                display: block;
+            }
+            @include media($horizontal-bar-mode) {
+                padding-right: $centered-navigation-submenu-padding;
+                position: relative;
+            }
+        }
+        ul.submenu {
+            display: none;
+            padding-left: 0;
+            @include media($horizontal-bar-mode) {
+                left: -$centered-navigation-submenu-padding;
+                position: absolute;
+                top: 1.5em;
+            }
+            .submenu {
+                @include media($horizontal-bar-mode) {
+                    left: $centered-navigation-submenu-width - .2em;
+                    top: 0;
+                }
+            }
+            li {
+                display: block;
+                padding-right: 0;
+                @include media($horizontal-bar-mode) {
+                    line-height: $centered-navigation-height / 1.3;
+                    &:first-child > a {
+                        border-top-left-radius: $base-border-radius;
+                        border-top-right-radius: $base-border-radius;
+                    }
+                    &:last-child > a {
+                        border-bottom-left-radius: $base-border-radius;
+                        border-bottom-right-radius: $base-border-radius;
+                        padding-bottom: .7em;
+                    }
+                }
+                a {
+                    background-color: darken($centered-navigation-background, 3);
+                    display: inline-block;
+                    text-align: right;
+                    width: 100%;
+                    @include media($horizontal-bar-mode) {
+                        background-color: $centered-navigation-background;
+                        padding-left: $centered-navigation-submenu-padding;
+                        text-align: left;
+                        width: $centered-navigation-submenu-width;
+                    }
+                }
+            }
+        }
     }
-  }
 }
 label {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-bottom: 0px;
-  padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 30px;
 }
 .loginbackground {
-  background-color: white;
-  opacity: 0.8;
-  z-index: 10;
-  width: 700px;
-  height: 700px;
-  position: relative;
-  bottom: 945px;
-  border-radius: 40px;
-  left: 370px;
+    background-color: white;
+    opacity: 0.8;
+    z-index: 10;
+    width: 700px;
+    height: 700px;
+    position: relative;
+    bottom: 945px;
+    border-radius: 40px;
+    left: 370px;
 }
 .login {
-  position: relative;
-  z-index: 50;
-  top: 85px;
-  left: 660px;
+    position: relative;
+    z-index: 50;
+    top: 85px;
+    left: 660px;
 }
 #loginpage {
-  // position: relative;
-  height: 900px;
+    // position: relative;
+    height: 900px;
 }
 .backgroundimage {
-  /* margin: 0px auto; */
-  
-  background-image: url('mapbackground.png');
-  background-repeat: no-repeat;
-  /* background-position: 43% 20%; */
-  
-  background-attachment: fixed;
-  position: relative;
-  z-index: 0;
-  height: 900px;
-  bottom: 120px;
-  width: 1500px;
+    /* margin: 0px auto; */
+    
+    background-image: url('mapbackground.png');
+    background-repeat: no-repeat;
+    /* background-position: 43% 20%; */
+    
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    height: 900px;
+    bottom: 120px;
+    width: 1500px;
 }
 .backgroundimage1 {
-  /* margin: 0px auto; */
-  
-  background-image: url('red.png');
-  background-repeat: no-repeat;
-  /* background-position: 43% 20%; */
-  
-  background-attachment: fixed;
-  position: relative;
-  z-index: 0;
-  height: 900px;
-  bottom: 120px;
-  width: 1500px;
+    /* margin: 0px auto; */
+    
+    background-image: url('red.png');
+    background-repeat: no-repeat;
+    /* background-position: 43% 20%; */
+    
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    height: 900px;
+    bottom: 120px;
+    width: 1500px;
 }
 .backgroundimage2 {
-  /* margin: 0px auto; */
-  
-  background-image: url('comic.png');
-  background-repeat: no-repeat;
-  /* background-position: 43% 20%; */
-  
-  background-attachment: fixed;
-  position: relative;
-  z-index: 0;
-  height: 900px;
-  bottom: 120px;
-  width: 1500px;
+    /* margin: 0px auto; */
+    
+    background-image: url('comic.png');
+    background-repeat: no-repeat;
+    /* background-position: 43% 20%; */
+    
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    height: 900px;
+    bottom: 120px;
+    width: 1500px;
 }
 .backgroundimage3 {
-  /* margin: 0px auto; */
-  
-  background-image: url('pirate.png');
-  background-repeat: no-repeat;
-  /* background-position: 43% 20%; */
-  
-  background-attachment: fixed;
-  position: relative;
-  z-index: 0;
-  height: 900px;
-  bottom: 120px;
-  width: 1500px;
+    /* margin: 0px auto; */
+    
+    background-image: url('pirate.png');
+    background-repeat: no-repeat;
+    /* background-position: 43% 20%; */
+    
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    height: 900px;
+    bottom: 120px;
+    width: 1500px;
 }
 $side-image-background-top: #B5EBEB;
 $side-image-background-bottom: #5DAC5D;
 $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, .8), 30);
 .side-image {
-  background: #F9F9F9;
-  height: 1500px;
-  @include media($large-screen) {
-    @include row(table);
-  }
-  .images-wrapper1 {
-    @include background(url('red.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
-    background-color: $side-image-background-top;
-    border-bottom: $side-image-border;
-    background-size: cover;
-    display: block;
-    min-height: 12em;
-    padding: 3em;
+    background: #F9F9F9;
+    height: 1500px;
     @include media($large-screen) {
-      @include span-columns(4);
-      background-position: bottom;
-      background-size: cover;
-      border-right: $side-image-border;
+        @include row(table);
     }
-  }
-  .images-wrapper2 {
-    border-bottom: $side-image-border;
-    display: block;
-    min-height: 12em;
-    padding: 3em;
-    @include media($large-screen) {
-      @include span-columns(4);
-      border-right: $side-image-border;
+    .images-wrapper1 {
+        @include background(url('red.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+        background-color: $side-image-background-top;
+        border-bottom: $side-image-border;
+        background-size: cover;
+        display: block;
+        min-height: 12em;
+        padding: 3em;
+        @include media($large-screen) {
+            @include span-columns(4);
+            background-position: bottom;
+            background-size: cover;
+            border-right: $side-image-border;
+        }
     }
-  }
-  .images-wrapper3 {
-    border-bottom: $side-image-border;
-    background-size: cover;
-    display: block;
-    min-height: 12em;
-    padding: 3em;
-    @include media($large-screen) {
-      @include span-columns(4);
-      background-position: bottom;
-      background-size: cover;
-      border-right: $side-image-border;
+    .images-wrapper2 {
+        border-bottom: $side-image-border;
+        display: block;
+        min-height: 12em;
+        padding: 3em;
+        @include media($large-screen) {
+            @include span-columns(4);
+            border-right: $side-image-border;
+        }
     }
-  }
-  .images-wrapper4 {
-    @include background(url('mapbackground.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
-    background-color: $side-image-background-top;
-    border-bottom: $side-image-border;
-    background-size: cover;
-    display: block;
-    min-height: 12em;
-    padding: 3em;
-    @include media($large-screen) {
-      @include span-columns(4);
-      background-position: bottom;
-      background-size: cover;
-      border-right: $side-image-border;
+    .images-wrapper3 {
+        border-bottom: $side-image-border;
+        background-size: cover;
+        display: block;
+        min-height: 12em;
+        padding: 3em;
+        @include media($large-screen) {
+            @include span-columns(4);
+            background-position: bottom;
+            background-size: cover;
+            border-right: $side-image-border;
+        }
     }
-  }
-  .content {
-    @include span-columns(12);
-    padding: 1em 1em 4em 1em;
-    @include media($large-screen) {
-      @include span-columns(8);
-      padding: 4em 4em 8em 4em;
+    .images-wrapper4 {
+        @include background(url('mapbackground.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+        background-color: $side-image-background-top;
+        border-bottom: $side-image-border;
+        background-size: cover;
+        display: block;
+        min-height: 12em;
+        padding: 3em;
+        @include media($large-screen) {
+            @include span-columns(4);
+            background-position: bottom;
+            background-size: cover;
+            border-right: $side-image-border;
+        }
     }
-  }
-  .content h1 {
-    margin-bottom: .9em;
-  }
-  .content h4 {
-    background: $side-image-background-bottom;
-    color: white;
-    display: inline-block;
-    font-size: .75em;
-    font-weight: 800;
-    margin-bottom: 1.3em;
-    padding: 3px 8px;
-    text-transform: uppercase;
-  }
-  .content p {
-    color: gray;
-    margin-bottom: 3em;
-  }
-  .content button {
-    @include button(simple, white);
-    font-size: $base-font-size;
-    outline: none;
-  }
-  @include reset-display();
+    .content {
+        @include span-columns(12);
+        padding: 1em 1em 4em 1em;
+        @include media($large-screen) {
+            @include span-columns(8);
+            padding: 4em 4em 8em 4em;
+        }
+    }
+    .content h1 {
+        margin-bottom: .9em;
+    }
+    .content h4 {
+        background: $side-image-background-bottom;
+        color: white;
+        display: inline-block;
+        font-size: .75em;
+        font-weight: 800;
+        margin-bottom: 1.3em;
+        padding: 3px 8px;
+        text-transform: uppercase;
+    }
+    .content p {
+        color: gray;
+        margin-bottom: 3em;
+    }
+    .content button {
+        @include button(simple, white);
+        font-size: $base-font-size;
+        outline: none;
+    }
+    @include reset-display();
 }
