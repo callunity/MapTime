@@ -14,10 +14,10 @@ Rails.application.routes.draw do
   get 'login' => 'user_sessions#new', :as => :login
   post 'logout' => 'user_sessions#destroy', :as => :logout
 
-  get 'downloadpage' => 'users#downloadpage', :as => :downloadpage
   get 'home' => 'users#home', :as => :home
   get 'about' => 'users#about', :as => :about
   get 'contact' => 'users#contact', :as => :contact
+    get 'download' => 'users#download', :as => :download
   
   get "users/download_csv"
   get "users/download_geojson"

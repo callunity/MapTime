@@ -2,22 +2,26 @@ class UsersController < ApplicationController
 
   # before_action :load_user, only: [:show, :edit, :update, :destroy]
   # skip_before_filter :require_login, only: [:index, :new, :create, :home, :about, :contact, :login, :graphs]
-  def download_csv
-    send_file "#{Rails.root}/public/data_files/torontoCT2011.csv.zip", :type => "application/zip"
-  end
+  # def download_csv
+  #   send_file "#{Rails.root}/public/data_files/torontoCT2011.csv.zip", :type => "application/zip"
+  # end
 
-    def download_geojson
-    send_file(
-      "#{Rails.root}/public/data_files/torontoCT2011.geojson.zip",
-      filename: "torontoCT2011.geojson.zip",
-      type: "application/zip"
-      )
-  end
+  #   def download_geojson
+  #   send_file(
+  #     "#{Rails.root}/public/data_files/torontoCT2011.geojson.zip",
+  #     filename: "torontoCT2011.geojson.zip",
+  #     type: "application/zip"
+  #     )
+  # end
 
 
 
   def home
     render :home
+  end
+
+  def download
+    
   end
 
   def login

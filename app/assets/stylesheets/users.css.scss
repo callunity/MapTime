@@ -1,6 +1,11 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.download-links{
+  font-size:20px;
+}
+
+
 .about-background {
   img {
     height: 100%;
@@ -81,7 +86,6 @@ h1 {
   margin-left: 0px;
   margin-right: 0px;
   height: 57px;
-  text-align: center;
   font-family: 'Bebas';
   font-size: 25px;
   padding: 10px;
@@ -127,7 +131,7 @@ h1 {
   display: inline;
 }
 .js-accordion-trigger {
-  padding: 0 10px;
+  margin-left: 20px;
 }
 .accordion {
   $accordion-menu-border-color: $base-border-color;
@@ -345,8 +349,8 @@ h1 {
       }
       p {
         font-family: 'Arial
-';
- margin: auto auto 3em;
+        ';
+        margin: auto auto 3em;
         font-weight: 300;
         line-height: 1.4em;
         color: #5e9ca0;
@@ -537,7 +541,7 @@ body {
     display: inline;
     float: left;
     max-height: $centered-navigation-height;
-    padding-left: $centered-navigation-padding;
+    // padding-left: $centered-navigation-padding;
     font-family: bebas;
     font-size: 25px;
     @include media($horizontal-bar-mode) {
@@ -562,7 +566,7 @@ body {
   }
   // Nav menu
   .centered-navigation-wrapper {
-    @include outer-container;
+    // @include outer-container;
     @include clearfix;
     position: relative;
     z-index: 999;
@@ -578,13 +582,12 @@ body {
     z-index: 99999;
     @include media ($horizontal-bar-mode) {
       display: block;
-      text-align: center;
     }
   }
   // The nav items
   .nav-link:first-child {
     @include media($horizontal-bar-mode) {
-      margin-left: $centered-navigation-item-nudge;
+      margin-left: 28px;
     }
   }
   ul li.nav-link {
@@ -637,13 +640,13 @@ body {
   li.more.nav-link {
     padding-right: 0;
     @include media($large-screen) {
-      padding-right: $centered-navigation-submenu-padding;
+      // padding-right: $centered-navigation-submenu-padding;
     }
     > ul > li:first-child a {
       padding-top: 1em;
     }
     a {
-      margin-right: $centered-navigation-submenu-padding;
+      // margin-right: $centered-navigation-submenu-padding;
     }
     > a {
       padding-right: 0.6em;
