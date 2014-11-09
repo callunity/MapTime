@@ -3,6 +3,7 @@ $(document).on('ready page:load', function() {
 
   $('.maps-trigger').bind('click', function(e) {
     $('.graphPage').hide();
+    $('.globe').hide();
     $('#chart-box').hide();
     $('.maps-submenu').show('fast');
     // apply the toggle to the ul
@@ -12,6 +13,7 @@ $(document).on('ready page:load', function() {
 
   $('.graphs-trigger').bind('click', function(e) {
     $('.graphPage').show();
+    $('.globe').hide();
     $('#chart-box').show();
     $('.submenu').hide()
     $('.map').css("height", '0px');
