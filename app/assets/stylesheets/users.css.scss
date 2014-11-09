@@ -4,11 +4,11 @@
 
 @font-face{ 
   font-family: 'bebas1';
-  src: url(font-path('bebas-webfont.eot'));
-  src: url(font-path('bebas-webfont.eot?iefix')) format('eot'),
-       url(font-path('bebas-webfont.woff')) format('woff'),
-       url(font-path('bebas-webfont.ttf')) format('truetype'),
-       url(font-path('bebas-webfont.svg#webfont')) format('svg');
+  src: font-url('bebas-webfont.eot');
+  src: font-url('bebas-webfont.eot?iefix') format('eot'),
+       font-url('bebas-webfont.woff') format('woff'),
+       font-url('bebas-webfont.ttf') format('truetype'),
+       font-url('bebas-webfont.svg#webfont') format('svg');
 }
 
 .download-links{
