@@ -1,6 +1,16 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face{ 
+  font-family: 'bebas1';
+  src: url('bebas-webfont.eot');
+  src: url('bebas-webfont.eot?iefix') format('eot'),
+       url('bebas-webfont.woff') format('woff'),
+       url('bebas-webfont.ttf') format('truetype'),
+       url('bebas-webfont.svg#webfont') format('svg');
+}
+
 .download-links{
   font-size:20px;
 }
@@ -40,7 +50,7 @@
         list-style: none;
       }
       .title {
-        font-family: bebas;
+        font-family: bebas1;
         font-size: 40px;
         text-align: left;
       }
@@ -68,11 +78,11 @@
   margin-left: 15%;
 }
 h1 {
-  font-family: 'bebas';
+  font-family: 'bebas1';
   color: #477dca;
 }
 .label {
-  font-family: 'bebas';
+  font-family: 'bebas1';
   font-size: 25px;
 }
 #chart-box {
@@ -86,7 +96,7 @@ h1 {
   margin-left: 0px;
   margin-right: 0px;
   height: 57px;
-  font-family: 'bebas';
+  font-family: 'bebas1';
   font-size: 25px;
   padding: 10px;
   a.categories {
@@ -152,7 +162,7 @@ h1 {
       // color: $accordion-menu-color;
       padding: $accordion-menu-list-padding;
       display: block;
-      font-family: 'bebas';
+      font-family: 'bebas1';
       color: #133d71;
       text-align: center;
       font-size: 27px;
@@ -282,7 +292,7 @@ h1 {
 }
 #logo {
   h2 {
-    font-family: 'bebas';
+    font-family: 'bebas1';
     color: #81bfdc;
     font-size: 50px;
     padding-top: 15px;
@@ -332,7 +342,7 @@ h1 {
       h1 {
         font-size: 150px;
         margin-bottom: 0.5em;
-        font-family: 'bebas';
+        font-family: 'bebas1';
         color: #133d71;
         margin-bottom: 0;
         padding-left: 115px;
@@ -343,7 +353,7 @@ h1 {
       h2 {
         font-size: 40px;
         margin-bottom: 0.5em;
-        font-family: 'bebas';
+        font-family: 'bebas1';
         color: #133d71;
         margin-bottom: 0;
       }
@@ -542,7 +552,7 @@ body {
     float: left;
     max-height: $centered-navigation-height;
     // padding-left: $centered-navigation-padding;
-    font-family: bebas;
+    font-family: bebas1;
     font-size: 25px;
     @include media($horizontal-bar-mode) {
       display: none;
@@ -622,7 +632,7 @@ body {
     line-height: 0;
     font-size: 20px;
     a {
-      font-family: bebas;
+      font-family: bebas1;
       margin-top: 18px;
       font-size: 50px
     }
@@ -634,7 +644,7 @@ body {
   //   margin-bottom: -$centered-navigation-logo-height / 3;
   //   max-height: $centered-navigation-logo-height;
   //   opacity: .6;
-  //   font-family: bebas;
+  //   font-family: bebas1;
   // }
   // Sub menus
   li.more.nav-link {
