@@ -1,4 +1,4 @@
-@include font-face(hipsterscriptpro, 'hipsterscriptpro-webfont', normal, $asset-pipeline: true);
+@include font-face(bebas, 'bebas-webfont', normal, $asset-pipeline: true);
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -17,7 +17,7 @@ h5,
 h6 {
   font-family: $header-font-family;
 
-  font-family: '/fonts/hipsterscriptpro';
+  font-family: '/fonts/bebas';
 
   line-height: $header-line-height;
   margin: 0;
