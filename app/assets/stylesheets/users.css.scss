@@ -1,7 +1,25 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+.globe {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes slidein {
+    from {
+        margin-right: 100%;
+        width: 300%;
+    }
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+h6 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
 .navigation {
     padding: 1em;
     height: 2em;
@@ -649,7 +667,7 @@ h1 {
 body {
     margin: 0;
     padding: 0;
-    background-color: #e2e6e7;
+    background-color: #d1e4e7;
 }
 .info {
     padding: 6px 8px;
