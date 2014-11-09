@@ -1,0 +1,1530 @@
+@charset "UTF-8";
+/* line 2, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+/* line 1, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/extends/_button.scss */
+button, input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  margin-left: 30px;
+}
+/* line 13, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/extends/_button.scss */
+button:hover, input[type="submit"]:hover {
+  background-color: #2c5999;
+  color: white;
+}
+/* line 18, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/extends/_button.scss */
+button:disabled, input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@font-face {
+  font-family: bebas;
+  font-weight: normal;
+  font-style: normal;
+  src: url(/assets/bebas-webfont.eot);
+  src: url(/assets/bebas-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/bebas-webfont.woff) format("woff"), url(/assets/bebas-webfont.ttf) format("truetype"), url(/assets/bebas-webfont.svg#bebas) format("svg");
+}
+
+/* line 3, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 17, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'bebas';
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 25, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 2.25em;
+}
+
+/* line 29, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 33, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.75em;
+}
+
+/* line 37, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 41, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25em;
+}
+
+/* line 45, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1em;
+}
+
+/* line 49, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 53, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477dca;
+  text-decoration: none;
+}
+/* line 58, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+a:hover {
+  color: #2c5999;
+}
+/* line 62, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+a:active, a:focus {
+  color: #2c5999;
+  outline: none;
+}
+
+/* line 68, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0;
+}
+
+/* line 77, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 82, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em;
+}
+
+/* line 89, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic;
+}
+/* line 93, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_typography.scss */
+cite:before {
+  content: "\2014 \00A0";
+}
+
+/* line 1, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em;
+}
+
+/* line 10, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+}
+
+/* line 16, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em;
+}
+/* line 20, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+label.required:after {
+  content: "*";
+}
+/* line 24, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+label abbr {
+  display: none;
+}
+
+/* line 31, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  margin-left: 30px;
+}
+/* line 45, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+textarea:hover,
+input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+select[multiple=multiple]:hover {
+  border-color: #c4c4c4;
+}
+/* line 49, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+textarea:focus,
+input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+select[multiple=multiple]:focus {
+  border-color: #477dca;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+  outline: none;
+}
+
+/* line 56, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 60, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 65, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+  margin-left: 30px;
+}
+
+/* line 71, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 76, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 1, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0;
+}
+
+/* line 22, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 2, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_lists.scss */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 20, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 23, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_lists.scss */
+dl dt {
+  font-weight: bold;
+  margin-top: 0.75em;
+}
+/* line 28, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 1, /Users/emmakotzer/MapTime/app/assets/stylesheets/base/_buttons.scss */
+button, input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-left: 0px;
+}
+
+@font-face {
+  font-family: 'bebas1';
+  src: url("/stylesheets/bebas-webfont.eot");
+  src: url("/stylesheets/bebas-webfont.eot?iefix") format("eot"), url("/stylesheets/bebas-webfont.woff") format("woff"), url("/stylesheets/bebas-webfont.ttf") format("truetype"), url("/stylesheets/bebas-webfont.svg#webfont") format("svg");
+}
+
+/* line 14, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.download-links {
+  font-size: 20px;
+}
+
+/* line 19, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.about-background {
+  opacity: 0.5;
+  z-index: 0;
+  position: relative;
+  height: 83%;
+}
+/* line 20, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.about-background img {
+  height: 100%;
+}
+/* line 27, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.about-background .content-wrapper {
+  background-color: white;
+  z-index: 80;
+  opacity: 0.8;
+  border-bottom-width: 50px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+/* line 38, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.about-background .content-wrapper .content {
+  opacity: 1;
+  z-index: 100;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 90%;
+}
+/* line 46, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.about-background .content-wrapper .content p {
+  margin-top: 20px;
+}
+/* line 49, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.about-background .content-wrapper .content li {
+  list-style: none;
+}
+/* line 52, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.about-background .content-wrapper .content .title {
+  font-family: bebas1;
+  font-size: 40px;
+  text-align: left;
+}
+
+/* line 60, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.maps-menu .active {
+  color: white;
+}
+
+/* line 63, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.cartodb-header .content .title {
+  padding-left: 20px;
+}
+
+/* line 66, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.map-wrapper {
+  margin-top: 50px;
+}
+
+/* line 69, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.submenu {
+  display: block;
+  background-color: #477dca;
+  height: 50px;
+  margin-top: 10px;
+  width: 105%;
+  margin-left: -10px;
+}
+
+/* line 77, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.graphPage {
+  margin-left: 15%;
+}
+
+/* line 80, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+h1 {
+  font-family: 'bebas1';
+  color: #477dca;
+}
+
+/* line 84, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.label {
+  font-family: 'bebas1';
+  font-size: 25px;
+}
+
+/* line 88, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#chart-box {
+  width: 800px;
+  height: 700px;
+  margin-top: 20px;
+  margin-left: 15%;
+}
+
+/* line 94, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.header {
+  background-color: white;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 57px;
+  font-family: 'bebas1';
+  font-size: 25px;
+  padding: 10px;
+}
+/* line 102, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.header a.categories {
+  padding: 7px 20px 0 29px;
+  float: left;
+  color: black;
+}
+/* line 106, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.header a.categories:hover {
+  color: white;
+}
+/* line 109, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.header a.categories:focus {
+  outline: none;
+}
+/* line 112, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.header a.categories:active {
+  border-bottom-color: white;
+}
+/* line 115, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.header a.categories .active {
+  color: white;
+}
+
+/* line 120, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  transition: background 1s ease-out;
+  -webkit-transition: background 1s ease-out;
+}
+
+/* line 129, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#loader.done {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* line 132, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#loader.hide {
+  display: none;
+}
+
+/* line 135, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#loader .message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+/* line 140, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.function-menu {
+  display: inline;
+}
+
+/* line 143, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.js-accordion-trigger {
+  margin-left: 20px;
+}
+
+/* line 146, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.accordion {
+  background-color: #f7f7f7;
+  border: 1px solid #dddddd;
+}
+/* line 158, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.accordion li {
+  border-bottom: 1px solid #dddddd;
+  line-height: 1.1em;
+}
+/* line 161, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.accordion li > a {
+  padding: 0.75em 1.618em;
+  display: block;
+  font-family: 'bebas1';
+  color: #133d71;
+  text-align: center;
+  font-size: 27px;
+}
+/* line 170, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.accordion li:last-child {
+  border: none;
+}
+/* line 173, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.accordion li:hover {
+  background-color: #fcfcfc;
+}
+/* line 177, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.accordion ul.submenu {
+  display: none;
+}
+/* line 179, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.accordion ul.submenu li {
+  background-color: #eaeaea;
+}
+/* line 181, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.accordion ul.submenu li:first-child {
+  border-top: 1px solid #dddddd;
+  box-shadow: inset 0 1px 1px #dadada;
+}
+/* line 185, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.accordion ul.submenu li:hover {
+  background-color: #efefef;
+}
+/* line 190, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.accordion .is-expanded {
+  display: block;
+  padding-bottom: 5px;
+}
+
+/* line 198, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.grid-items-lines {
+  position: relative;
+}
+/* line 15, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.grid-items-lines:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 208, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.grid-items-lines .grid-item {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  height: 14em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  float: right;
+  cursor: pointer;
+  border-right-width: 10px;
+  border-left-width: 10px;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 208, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .grid-items-lines .grid-item {
+    width: 25%;
+  }
+}
+/* line 225, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.grid-items-lines .grid-item:hover {
+  background: rgba(51, 51, 51, 0.05);
+}
+/* line 229, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.grid-items-lines .grid-item img {
+  display: block;
+  height: 300px;
+  height: 300px;
+  margin-bottom: 1.2em;
+}
+/* line 235, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.grid-items-lines .grid-item h1 {
+  color: black;
+  font-size: 1.3em;
+  margin-bottom: 0.4em;
+}
+/* line 240, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.grid-items-lines .grid-item p {
+  color: rgba(51, 51, 51, 0.6);
+}
+@media screen and (min-width: 40em) {
+  /* line 240, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .grid-items-lines .grid-item p {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 53.75em) {
+  /* line 246, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .grid-items-lines .grid-item-big {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 40em) {
+  /* line 250, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .grid-items-lines .grid-item-big p {
+    max-width: 60%;
+  }
+}
+/* line 257, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.grid-items-lines .bottom-cover {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+}
+/* line 264, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.grid-items-lines .right-cover {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 4px;
+}
+
+/* line 272, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 274, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.wrapper .primary {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 38, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.wrapper .primary:last-child {
+  margin-right: 0;
+}
+/* line 277, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.wrapper .secondary {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 38, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.wrapper .secondary:last-child {
+  margin-right: 0;
+}
+/* line 280, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.wrapper .third {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 38, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.wrapper .third:last-child {
+  margin-right: 0;
+}
+
+/* line 284, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("images/page-loader.gif") 50% 50% no-repeat #f9f9f9;
+}
+
+/* line 294, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#logo h2 {
+  font-family: 'bebas1';
+  color: #81bfdc;
+  font-size: 50px;
+  padding-top: 15px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+/* line 304, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#nav p {
+  font-family: 'Arial';
+  padding-top: 15px;
+  padding-left: 15px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+/* line 313, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.hero {
+  background: url("toronto2.png");
+  background: url("toronto2.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  padding-bottom: 4em;
+  padding-top: 7em;
+  height: 876px;
+}
+/* line 326, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.hero .hero-logo img {
+  height: 3em;
+  margin-bottom: 2.5em;
+}
+/* line 330, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.hero .hero-inner {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+  margin: auto;
+  text-align: center;
+}
+/* line 15, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.hero .hero-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 15, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.hero .hero-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 337, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.hero .hero-inner button {
+  background-color: white;
+}
+/* line 340, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.hero .hero-inner .hero-copy {
+  text-align: center;
+}
+/* line 342, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.hero .hero-inner .hero-copy h1 {
+  font-size: 150px;
+  margin-bottom: 0.5em;
+  font-family: 'bebas1';
+  color: #133d71;
+  margin-bottom: 0;
+  padding-left: 115px;
+}
+/* line 353, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.hero .hero-inner .hero-copy h2 {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+  font-family: 'bebas1';
+  color: #133d71;
+  margin-bottom: 0;
+}
+/* line 360, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.hero .hero-inner .hero-copy p {
+  font-family: "Arial
+        ";
+  margin: auto auto 3em;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: #5e9ca0;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 360, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .hero .hero-inner .hero-copy p {
+    font-size: 1em;
+    max-width: 100%;
+  }
+}
+
+/* line 375, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.ui-button {
+  position: absolute;
+  z-index: 100;
+  right: 936px;
+  top: 61px;
+  background: none;
+  color: pink;
+}
+/* line 382, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.ui-button:hover {
+  background: none;
+}
+
+/* line 386, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#map {
+  width: 100%;
+  height: 800px;
+}
+
+/* line 390, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#snapshot {
+  width: 100%;
+}
+
+/* line 393, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.home {
+  font-family: 'Aria';
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/* line 401, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.home p {
+  font-size: 15px;
+}
+
+/* line 405, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.label-switch {
+  padding-top: 6px;
+  align-self: center;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  height: 30px;
+  position: relative;
+  vertical-align: middle;
+  padding-left: 10px;
+  width: 450px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial;
+  color: #0e7347;
+}
+/* line 426, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.label-switch input[type="checkbox"] {
+  display: none;
+}
+/* line 428, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.label-switch input[type="checkbox"] + .checkbox {
+  background: #e5e5e5;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 20px;
+  margin-right: 10px;
+  padding: 0;
+  position: relative;
+  width: 35px;
+  z-index: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 441, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.label-switch input[type="checkbox"] + .checkbox:before {
+  background: white;
+  border-radius: 20px;
+  content: ' ';
+  height: 16px;
+  width: 31px;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+/* line 453, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.label-switch input[type="checkbox"] + .checkbox:after {
+  background: white;
+  border-radius: 16px;
+  content: ' ';
+  height: 16px;
+  width: 16px;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 466, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.label-switch input[type="checkbox"]:checked + .checkbox {
+  background: #477dca;
+}
+/* line 468, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.label-switch input[type="checkbox"]:checked + .checkbox:before {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+/* line 471, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.label-switch input[type="checkbox"]:checked + .checkbox:after {
+  left: 17px;
+}
+
+/* line 478, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.cnvs {
+  width: 0px;
+  height: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+/* line 483, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.cnvs:photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 800px;
+}
+
+/* line 491, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e2e6e7;
+}
+
+/* line 496, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* line 503, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+/* line 507, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.tooltip {
+  opacity: 1;
+}
+
+/* line 510, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.map-tooltip {
+  min-height: 80px;
+  min-width: 320px;
+}
+
+/* line 514, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#canvas {
+  margin-left: 20px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  border: thin solid #aaa;
+  cursor: crosshair;
+  padding: 0;
+}
+
+/* line 522, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#controls {
+  margin: 20px 0 20px 20px;
+}
+
+/* line 525, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#rubberbandDiv {
+  position: absolute;
+  border: 3px solid blue;
+  cursor: crosshair;
+  display: none;
+}
+
+/* line 531, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation {
+  background-color: black;
+  border-bottom: 1px solid black;
+  font-family: Arial;
+  height: 60px;
+  width: 100%;
+  z-index: 9999;
+}
+/* line 550, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation .mobile-logo {
+  display: inline;
+  float: left;
+  max-height: 60px;
+  font-family: bebas1;
+  font-size: 25px;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 550, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation .mobile-logo {
+    display: none;
+  }
+}
+/* line 561, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation .centered-navigation-menu-button {
+  color: rgba(51, 51, 51, 0.7);
+  display: block;
+  float: right;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 0;
+  padding-right: 1em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 561, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation .centered-navigation-menu-button {
+    display: none;
+  }
+}
+/* line 573, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation .centered-navigation-menu-button:hover {
+  color: #333333;
+}
+/* line 578, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation .centered-navigation-wrapper {
+  position: relative;
+  z-index: 999;
+}
+/* line 15, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.centered-navigation .centered-navigation-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 584, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation ul.centered-navigation-menu {
+  -webkit-transform-style: preserve-3d;
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+  z-index: 99999;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 584, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation ul.centered-navigation-menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 53.75em) {
+  /* line 598, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation .nav-link:first-child {
+    margin-left: 28px;
+  }
+}
+/* line 603, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation ul li.nav-link {
+  background: black;
+  display: block;
+  line-height: 60px;
+  overflow: hidden;
+  padding-right: 1em;
+  text-align: right;
+  width: 100%;
+  z-index: 9999;
+  padding-top: 8px;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 603, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation ul li.nav-link {
+    background: transparent;
+    display: inline;
+    line-height: 60px;
+  }
+  /* line 617, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation ul li.nav-link a {
+    padding-right: 1em;
+  }
+}
+/* line 621, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation ul li.nav-link a {
+  color: white;
+  display: inline-block;
+  font-family: Arial;
+}
+/* line 625, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation ul li.nav-link a:hover {
+  color: #81bfdc;
+}
+/* line 630, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.logo.nav-link {
+  display: none;
+  line-height: 0;
+  font-size: 20px;
+}
+/* line 634, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.logo.nav-link a {
+  font-family: bebas1;
+  margin-top: 18px;
+  font-size: 50px;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 630, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation li.logo.nav-link {
+    display: inline;
+  }
+}
+/* line 650, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.more.nav-link {
+  padding-right: 0;
+}
+/* line 655, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.more.nav-link > ul > li:first-child a {
+  padding-top: 1em;
+}
+/* line 661, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.more.nav-link > a {
+  padding-right: 0.6em;
+  padding-top: 0.5em;
+}
+/* line 665, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.more.nav-link > a:after {
+  position: absolute;
+  top: auto;
+  right: -0.4em;
+  bottom: auto;
+  left: auto;
+  color: rgba(51, 51, 51, 0.7);
+  content: '\25BE';
+}
+/* line 671, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.more {
+  overflow: visible;
+  padding-right: 0;
+}
+/* line 674, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.more a {
+  padding-right: 1em;
+}
+/* line 677, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.more > a {
+  padding-right: 1.6em;
+  position: relative;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 677, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation li.more > a {
+    margin-right: 1em;
+  }
+}
+/* line 683, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.more > a:after {
+  content: '›';
+  font-size: 1.2em;
+  position: absolute;
+  right: 0.5em;
+}
+/* line 690, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation li.more:hover > .submenu {
+  display: block;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 671, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation li.more {
+    padding-right: 1em;
+    position: relative;
+  }
+}
+/* line 698, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation ul.submenu {
+  display: none;
+  padding-left: 0;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 698, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation ul.submenu {
+    left: -1em;
+    position: absolute;
+    top: 1.5em;
+  }
+}
+@media screen and (min-width: 53.75em) {
+  /* line 706, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation ul.submenu .submenu {
+    left: 11.8em;
+    top: 0;
+  }
+}
+/* line 712, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation ul.submenu li {
+  display: block;
+  padding-right: 0;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 712, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation ul.submenu li {
+    line-height: 46.15385px;
+  }
+  /* line 717, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation ul.submenu li:first-child > a {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  /* line 721, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation ul.submenu li:last-child > a {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-bottom: .7em;
+  }
+}
+/* line 727, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.centered-navigation ul.submenu li a {
+  background-color: black;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 727, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .centered-navigation ul.submenu li a {
+    background-color: black;
+    padding-left: 1em;
+    text-align: left;
+    width: 12em;
+  }
+}
+
+/* line 742, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+label {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+}
+
+/* line 748, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.loginbackground {
+  background-color: white;
+  opacity: 0.8;
+  z-index: 10;
+  width: 700px;
+  height: 700px;
+  position: relative;
+  bottom: 945px;
+  border-radius: 40px;
+  left: 370px;
+}
+
+/* line 759, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.login {
+  position: relative;
+  z-index: 50;
+  top: 85px;
+  left: 660px;
+}
+
+/* line 765, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+#loginpage {
+  height: 900px;
+}
+
+/* line 769, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.backgroundimage {
+  /* margin: 0px auto; */
+  background-image: url("mapbackground.png");
+  background-repeat: no-repeat;
+  /* background-position: 43% 20%; */
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  height: 900px;
+  bottom: 120px;
+  width: 1500px;
+}
+
+/* line 783, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.backgroundimage1 {
+  /* margin: 0px auto; */
+  background-image: url("red.png");
+  background-repeat: no-repeat;
+  /* background-position: 43% 20%; */
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  height: 900px;
+  bottom: 120px;
+  width: 1500px;
+}
+
+/* line 797, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.backgroundimage2 {
+  /* margin: 0px auto; */
+  background-image: url("comic.png");
+  background-repeat: no-repeat;
+  /* background-position: 43% 20%; */
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  height: 900px;
+  bottom: 120px;
+  width: 1500px;
+}
+
+/* line 811, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.backgroundimage3 {
+  /* margin: 0px auto; */
+  background-image: url("pirate.png");
+  background-repeat: no-repeat;
+  /* background-position: 43% 20%; */
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  height: 900px;
+  bottom: 120px;
+  width: 1500px;
+}
+
+/* line 828, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.side-image {
+  background: #F9F9F9;
+  height: 1500px;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 828, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .side-image {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  /* line 15, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+  .side-image:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/* line 834, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.side-image .images-wrapper1 {
+  background: url("red.png"), -webkit-linear-gradient( #b5ebeb, #5dac5d), no-repeat #b5ebeb scroll;
+  background: url("red.png"), linear-gradient( #b5ebeb, #5dac5d), no-repeat #b5ebeb scroll;
+  background-color: #b5ebeb;
+  border-bottom: 1px solid rgba(38, 74, 38, 0.2);
+  background-size: cover;
+  display: block;
+  min-height: 12em;
+  padding: 3em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 834, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .side-image .images-wrapper1 {
+    display: table-cell;
+    width: 33.33333%;
+    background-position: bottom;
+    background-size: cover;
+    border-right: 1px solid rgba(38, 74, 38, 0.2);
+  }
+}
+/* line 849, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.side-image .images-wrapper2 {
+  border-bottom: 1px solid rgba(38, 74, 38, 0.2);
+  display: block;
+  min-height: 12em;
+  padding: 3em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 849, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .side-image .images-wrapper2 {
+    display: table-cell;
+    width: 33.33333%;
+    border-right: 1px solid rgba(38, 74, 38, 0.2);
+  }
+}
+/* line 859, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.side-image .images-wrapper3 {
+  border-bottom: 1px solid rgba(38, 74, 38, 0.2);
+  background-size: cover;
+  display: block;
+  min-height: 12em;
+  padding: 3em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 859, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .side-image .images-wrapper3 {
+    display: table-cell;
+    width: 33.33333%;
+    background-position: bottom;
+    background-size: cover;
+    border-right: 1px solid rgba(38, 74, 38, 0.2);
+  }
+}
+/* line 872, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.side-image .images-wrapper4 {
+  background: url("mapbackground.png"), -webkit-linear-gradient( #b5ebeb, #5dac5d), no-repeat #b5ebeb scroll;
+  background: url("mapbackground.png"), linear-gradient( #b5ebeb, #5dac5d), no-repeat #b5ebeb scroll;
+  background-color: #b5ebeb;
+  border-bottom: 1px solid rgba(38, 74, 38, 0.2);
+  background-size: cover;
+  display: block;
+  min-height: 12em;
+  padding: 3em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 872, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .side-image .images-wrapper4 {
+    display: table-cell;
+    width: 33.33333%;
+    background-position: bottom;
+    background-size: cover;
+    border-right: 1px solid rgba(38, 74, 38, 0.2);
+  }
+}
+/* line 887, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.side-image .content {
+  display: table-cell;
+  width: 100%;
+  padding: 1em 1em 4em 1em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 887, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+  .side-image .content {
+    display: table-cell;
+    width: 66.66667%;
+    padding: 4em 4em 8em 4em;
+  }
+}
+/* line 895, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.side-image .content h1 {
+  margin-bottom: .9em;
+}
+/* line 898, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.side-image .content h4 {
+  background: #5dac5d;
+  color: white;
+  display: inline-block;
+  font-size: .75em;
+  font-weight: 800;
+  margin-bottom: 1.3em;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+/* line 908, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.side-image .content p {
+  color: gray;
+  margin-bottom: 3em;
+}
+/* line 912, /Users/emmakotzer/MapTime/app/assets/stylesheets/users.css.scss */
+.side-image .content button {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 white;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: white;
+  background-image: -webkit-linear-gradient(white, #e3e3e3);
+  background-image: linear-gradient(white, #e3e3e3);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+  background-clip: padding-box;
+  border: 1px solid #dfd8d8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 white;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: white;
+  background-image: -webkit-linear-gradient(white, #e5e0e0);
+  background-image: linear-gradient(white, #e5e0e0);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+  background-clip: padding-box;
+  font-size: 1em;
+  outline: none;
+}
+/* line 131, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.side-image .content button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 white;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(#f2f2f2, #dbdbdb);
+  background-image: linear-gradient(#f2f2f2, #dbdbdb);
+}
+/* line 148, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.side-image .content button:active:not(:disabled), .side-image .content button:focus:not(:disabled) {
+  border: 1px solid #dbdbdb;
+  box-shadow: inset 0 0 8px 4px #d4d4d4, inset 0 0 8px 4px #d4d4d4;
+}
+/* line 131, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.side-image .content button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 white;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(#f2f2f2, #ded8d8);
+  background-image: linear-gradient(#f2f2f2, #ded8d8);
+}
+/* line 148, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.side-image .content button:active:not(:disabled), .side-image .content button:focus:not(:disabled) {
+  border: 1px solid #dfd8d8;
+  box-shadow: inset 0 0 8px 4px #d7d1d1, inset 0 0 8px 4px #d7d1d1;
+}
+/* line 51, /Users/emmakotzer/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.side-image .content button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
